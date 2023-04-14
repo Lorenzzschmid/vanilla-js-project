@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main>
@@ -14,11 +19,12 @@
                 <label for="searchBar__text">Enter a new location</label>
                 <input type="text" id="searchBar__text" class="searchBar__text" type="text" role="searchbox" size="40" autocomplete="off" placeholder="City, State, Country">
                 <button id="searchBar__button" class="searchBar__button" title="Submit Location" aria-label="Enter Zip Code or City, State, and Country to retrieve weather conditions">
-                    Submit
+                    <i class="fa fa-search"></i>
+                    <i class="fas fa-sync fa-spin"></i>
                 </button>
             </form>
         </section>
-        
+
         <section id="currentForecast" class="currentForecast"></section>
         <nav id="navButtons" class="navButtons"></nav>
         <section id="dailyForecast" class="dailyForecast"></section>
